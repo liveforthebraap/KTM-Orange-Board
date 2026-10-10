@@ -1,34 +1,294 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <meta name="theme-color" content="#101010">
-<meta name="description" content="Daniel Kochs — Germany | KTM Orange Board rider profile">
+
+<meta name="description"
+content="Daniel Kochs – Germany | KTM Orange Board Rider Profile">
+
 <title>Daniel Kochs | KTM Orange Board</title>
+
 <style>
-:root{color-scheme:dark;--orange:#ff6600;--bg:#101010;--muted:#c6c6c6}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-header{padding:23px 20px;border-bottom:3px solid var(--orange);letter-spacing:.16em;font-size:13px;font-weight:800;display:flex;justify-content:space-between;gap:15px}header span{color:var(--orange)}
-main{max-width:760px;margin:auto;padding:36px 20px 60px}.eyebrow{color:var(--orange);letter-spacing:.23em;font-size:13px;font-weight:bold;margin:0 0 8px}h1{font-size:clamp(42px,9vw,72px);line-height:1.04;margin:0 0 8px;letter-spacing:-.05em}h2{font-size:16px;letter-spacing:.18em;color:var(--orange);margin:0 0 30px}
-.photo{width:100%;height:auto;display:block;background:#252525;border-bottom:5px solid var(--orange)}
-.copy{padding:28px 0 12px;font-size:18px}.copy p{margin:0 0 24px}.label{font-size:12px;font-weight:800;letter-spacing:.17em;color:var(--orange);margin:14px 0 10px}.bikes{font-size:16px;color:#ddd;line-height:1.85}
-.button{display:block;text-align:center;text-decoration:none;background:var(--orange);color:#101010;font-weight:900;letter-spacing:.04em;padding:19px 16px;margin-top:36px;transition:background .2s}.button:hover,.button:focus-visible{background:#ff8a33}.foot{margin-top:24px;font-size:12px;color:#999}footer{border-top:1px solid #333;text-align:center;color:#777;padding:25px;font-size:12px}
+
+:root {
+  --orange: #ff6600;
+  --background: #101010;
+  --text: #ffffff;
+  --muted: #c6c6c6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.55;
+}
+
+/* HEADER */
+
+header {
+  padding: 23px 20px;
+  border-bottom: 3px solid var(--orange);
+  letter-spacing: 0.16em;
+  font-size: 13px;
+  font-weight: 800;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+header span {
+  color: var(--orange);
+}
+
+/* MAIN CONTENT */
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 36px 20px 60px;
+}
+
+.eyebrow {
+  color: var(--orange);
+  letter-spacing: 0.23em;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: clamp(42px, 9vw, 72px);
+  line-height: 1.04;
+  margin: 0 0 8px;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 0.18em;
+  color: var(--orange);
+  margin: 0 0 30px;
+}
+
+/* PHOTO – ORIGINAL ASPECT RATIO */
+
+.photo-container {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  background: #252525;
+  border-bottom: 5px solid var(--orange);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center;
+  aspect-ratio: auto !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* PROFILE TEXT */
+
+.copy {
+  padding: 28px 0 12px;
+  font-size: 18px;
+}
+
+.copy p {
+  margin: 0 0 24px;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+  color: var(--orange);
+  margin: 14px 0 10px;
+}
+
+.bikes {
+  font-size: 16px;
+  color: #dddddd;
+  line-height: 1.85;
+}
+
+/* KTM BUTTON */
+
+.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: var(--orange);
+  color: #101010;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 19px 16px;
+  margin-top: 36px;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #ff8a33;
+}
+
+/* FOOTNOTE */
+
+.foot {
+  margin-top: 24px;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* FOOTER */
+
+footer {
+  border-top: 1px solid #333333;
+  text-align: center;
+  color: #777777;
+  padding: 25px;
+  font-size: 12px;
+}
+
 </style>
+
 </head>
+
 <body>
-<header><div>KTM <span>ORANGE BOARD</span></div><div>RIDER PROFILE</div></header>
+
+<header>
+  <div>
+    KTM <span>ORANGE BOARD</span>
+  </div>
+
+  <div>
+    RIDER PROFILE
+  </div>
+</header>
+
 <main>
-<p class="eyebrow">MEET THE ORANGE BOARD MEMBERS</p>
-<h1>Daniel Kochs</h1>
-<h2>GERMANY</h2>
-<img class="photo" src="daniel-kochs.jpg" alt="Daniel Kochs — KTM Orange Board" onerror="this.style.display='none';document.getElementById('photo-note').hidden=false">
-<p id="photo-note" hidden style="color:#ccc;border:1px dashed #666;padding:22px">Portrait could not be loaded.</p>
-<section class="copy"><p>Daniel rides everything from hard enduro to dual-sport adventures across Europe, offering hands-on insight into real-world performance, usability, and KTM bike customization.</p></section>
-<p class="label">KTM MOTORCYCLES RIDDEN / OWNED</p>
-<div class="bikes">2016 KTM 250 EXC SD, 2016 KTM 350 EXC-F SD, 2019 KTM 790 ADVENTURE R (highly customized), 2022 KTM 690 ENDURO R (highly customized Rally built), 2022 KTM 690 SMC-R (customized), 2022 KTM 500 EXC-F (clean Supermoto Build), 2024 KTM 450 EXC-F (highly customized light Rally built)</div>
-<a class="button" href="https://www.ktm.com/de-de/ktm-world/news/ktm-orange-board.html">EXPLORE THE OFFICIAL KTM ORANGE BOARD →</a>
-<p class="foot">Independent profile page reproducing the member information published by KTM. Visit the official KTM website for the complete Orange Board feature and video.</p>
-</main><footer>READY TO RACE · KTM ORANGE BOARD</footer>
+
+<p class="eyebrow">
+  MEET THE ORANGE BOARD MEMBERS
+</p>
+
+<h1>
+  Daniel Kochs
+</h1>
+
+<h2>
+  GERMANY
+</h2>
+
+<!-- ORIGINAL PHOTO -->
+
+<div class="photo-container">
+
+  <img
+    class="photo"
+    src="daniel-kochs.jpg"
+    alt="Daniel Kochs – KTM Orange Board"
+    width="100%"
+    loading="eager"
+  >
+
+</div>
+
+<!-- PROFILE DESCRIPTION -->
+
+<section class="copy">
+
+<p>
+Daniel rides everything from hard enduro to
+dual-sport adventures across Europe,
+offering hands-on insight into real-world
+performance, usability, and KTM bike
+customization.
+</p>
+
+</section>
+
+<!-- MOTORCYCLE LIST -->
+
+<p class="label">
+KTM MOTORCYCLES RIDDEN / OWNED
+</p>
+
+<div class="bikes">
+
+2016 KTM 250 EXC SD,<br>
+
+2016 KTM 350 EXC-F SD,<br>
+
+2019 KTM 790 ADVENTURE R
+(highly customized),<br>
+
+2022 KTM 690 ENDURO R
+(highly customized Rally built),<br>
+
+2022 KTM 690 SMC-R
+(customized),<br>
+
+2022 KTM 500 EXC-F
+(clean Supermoto Build),<br>
+
+2024 KTM 450 EXC-F
+(highly customized light Rally built)
+
+</div>
+
+<!-- OFFICIAL KTM WEBSITE BUTTON -->
+
+<a
+  class="button"
+  href="https://www.ktm.com/de-de/ktm-world/news/ktm-orange-board.html"
+  target="_self"
+>
+
+EXPLORE THE OFFICIAL KTM ORANGE BOARD →
+
+</a>
+
+<p class="foot">
+
+Independent profile page reproducing the
+member information published by KTM.
+
+Visit the official KTM website for the
+complete Orange Board feature and video.
+
+</p>
+
+</main>
+
+<footer>
+
+READY TO RACE · KTM ORANGE BOARD
+
+</footer>
+
 </body>
+
 </html>
